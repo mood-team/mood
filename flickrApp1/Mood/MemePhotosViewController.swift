@@ -16,7 +16,7 @@ final class MemePhotosViewController: UICollectionViewController {
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     
     fileprivate var searches = [FlickrSearchResults]()
-    fileprivate let flickr = Mood()
+    fileprivate let mood = Mood()
     fileprivate let itemsPerRow: CGFloat = 2
 }
 
@@ -35,7 +35,7 @@ extension MemePhotosViewController : UITextFieldDelegate {
         activityIndicator.frame = textField.bounds
         activityIndicator.startAnimating()
         
-        flickr.searchFlickrForTerm(textField.text!) {
+        mood.searchFlickrForTerm(textField.text!) {
             results, error in
             
             
