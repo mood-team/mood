@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-P8-f1x">
-                                <rect key="frame" x="83" y="132" width="209" height="253"/>
+                                <rect key="frame" x="83" y="132" width="271" height="253"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9Bb-P8-f1x" secondAttribute="height" multiplier="209:195" id="H2H-Yy-B88"/>
                                 </constraints>
@@ -308,15 +308,19 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcU-s5-viD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mood 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcU-s5-viD">
                                 <rect key="frame" x="167" y="510" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mood1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rb5-Vq-eJ5">
                                 <rect key="frame" x="82" y="131" width="209" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Tb-3p-I4N"/>
+                                    <constraint firstAttribute="width" secondItem="Rb5-Vq-eJ5" secondAttribute="height" multiplier="209:195" id="796-Ps-Qsf"/>
+                                    <constraint firstAttribute="width" constant="200" id="FBV-Wv-4ta"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lm0-uS-cJl">
                                 <rect key="frame" x="82" y="368" width="211" height="30"/>
@@ -330,19 +334,35 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lm0-uS-cJl" firstAttribute="top" secondItem="Rb5-Vq-eJ5" secondAttribute="bottom" constant="42" id="29a-1n-wVF"/>
+                            <constraint firstItem="Lm0-uS-cJl" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="66" id="6O0-4K-WaZ"/>
                             <constraint firstItem="cta-rV-BGA" firstAttribute="top" secondItem="lST-NN-Kmp" secondAttribute="bottom" id="6cL-Nl-My6"/>
                             <constraint firstItem="cta-rV-BGA" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="100" id="A7F-BF-kBO"/>
                             <constraint firstItem="a21-aO-Xuk" firstAttribute="top" secondItem="cta-rV-BGA" secondAttribute="bottom" id="BcD-87-W3R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rb5-Vq-eJ5" secondAttribute="trailing" constant="68" id="CnW-qV-QFl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cta-rV-BGA" secondAttribute="trailing" constant="119" id="DAk-bM-D1L"/>
                             <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="top" secondItem="hxa-oL-0Gx" secondAttribute="bottom" constant="112" id="DjP-jZ-8W3"/>
+                            <constraint firstItem="AcU-s5-viD" firstAttribute="top" secondItem="cta-rV-BGA" secondAttribute="bottom" constant="8" id="DlE-Qi-of5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lST-NN-Kmp" secondAttribute="trailing" constant="66" id="K59-aE-ABY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rb5-Vq-eJ5" secondAttribute="trailing" constant="67" id="MNY-HV-EmR"/>
                             <constraint firstItem="cta-rV-BGA" firstAttribute="top" secondItem="lST-NN-Kmp" secondAttribute="bottom" id="OEH-Fj-Gog"/>
+                            <constraint firstItem="Lm0-uS-cJl" firstAttribute="top" secondItem="Rb5-Vq-eJ5" secondAttribute="bottom" constant="42" id="Q95-ec-5L1"/>
                             <constraint firstItem="cta-rV-BGA" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="100" id="SJh-si-YTA"/>
+                            <constraint firstItem="lST-NN-Kmp" firstAttribute="top" secondItem="Lm0-uS-cJl" secondAttribute="bottom" constant="8" id="SZK-hB-c7U"/>
+                            <constraint firstItem="cta-rV-BGA" firstAttribute="top" secondItem="lST-NN-Kmp" secondAttribute="bottom" constant="26" id="WZF-fD-Mo1"/>
+                            <constraint firstItem="lST-NN-Kmp" firstAttribute="top" secondItem="Lm0-uS-cJl" secondAttribute="bottom" constant="8" id="Wu5-Sw-6A9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cta-rV-BGA" secondAttribute="trailing" constant="100" id="Xe9-qf-fUS"/>
+                            <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="top" secondItem="hxa-oL-0Gx" secondAttribute="bottom" constant="111" id="aSi-K4-guM"/>
+                            <constraint firstItem="lST-NN-Kmp" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="66" id="bJ1-A5-yWp"/>
                             <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="top" secondItem="hxa-oL-0Gx" secondAttribute="bottom" constant="112" id="e78-o5-HiY"/>
+                            <constraint firstItem="cta-rV-BGA" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="118" id="j1z-v2-jx9"/>
                             <constraint firstItem="a21-aO-Xuk" firstAttribute="top" secondItem="cta-rV-BGA" secondAttribute="bottom" id="mY8-cN-Uyx"/>
+                            <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="66" id="oMt-bH-QPr"/>
                             <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="67" id="pqL-1j-pQf"/>
                             <constraint firstItem="Rb5-Vq-eJ5" firstAttribute="leading" secondItem="4GH-7D-mBM" secondAttribute="leadingMargin" constant="67" id="rSo-cm-fEV"/>
+                            <constraint firstItem="cta-rV-BGA" firstAttribute="top" secondItem="lST-NN-Kmp" secondAttribute="bottom" constant="26" id="u0m-vS-WcY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cta-rV-BGA" secondAttribute="trailing" constant="100" id="vGF-og-G8F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lm0-uS-cJl" secondAttribute="trailing" constant="66" id="xWD-rH-q9G"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -546,6 +566,6 @@
         <image name="mood1.png" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zDd-op-zC9"/>
+        <segue reference="ItK-iM-Juk"/>
     </inferredMetricsTieBreakers>
 </document>
