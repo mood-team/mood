@@ -18,6 +18,15 @@ This repository encompasses the Mood IOS app developed using swift
  5. git push - push changes
 
 
+## Configuring XCODE
+
+XCode --> Preferences --> Accounts --> mood
+Enter the password for your ssh key creation.
+
+Source Control --> git commit (click check marked files to view your diffs) and git push in the IDE
+
 ### Installing for development
+
+
 
 ### Running Tests
