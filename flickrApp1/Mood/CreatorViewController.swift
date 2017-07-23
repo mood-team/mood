@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreatorViewController.swift
 //  mood
 //
 //  Created by Simran on 7/22/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CreatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
